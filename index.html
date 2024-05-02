@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NYC Sister Cities Map</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div id="infoModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Welcome to NYC Sister Cities Map!</h2>
+        <p>This interactive map allows you to explore the connections between New York City and its global sister cities.</p>
+        <ul>
+            <li>Click on any city name on the sidebar to zoom into that location on the map.</li>
+            <li>Search for cities using the search box at the top of the sidebar.</li>
+            <li>Click on any marker on the map to get more information about that city.</li>
+        </ul>
+    </div>
+</div>
+<div class="sidebar">
+    <input type="text" id="search-box" placeholder="Search city..." onkeyup="searchCity()">
+    <h2>Sister Cities</h2>
+    <div id="city-buttons"></div>
+</div>
+<div class="header">
+    <h1>NYC Sister Cities Map</h1>
+    <p>Discover the special ties between New York City and its sister cities globally. Click any marker for details.</p>
+</div>
+<div id="map"></div>
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
